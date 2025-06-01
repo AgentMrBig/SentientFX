@@ -1,0 +1,64 @@
+# ------------------------------------------------------------------
+# Python / Virtual Environment
+# ------------------------------------------------------------------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+env/
+venv/
+ENV/
+
+# ------------------------------------------------------------------
+# Secrets & Config
+# ------------------------------------------------------------------
+.env            # OpenAI key or other private creds
+*.pem
+*.key
+*.crt
+
+# ------------------------------------------------------------------
+# IDE / Editor / OS Junk
+# ------------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+*~
+
+# ------------------------------------------------------------------
+# Runtime Data & Artifacts
+# ------------------------------------------------------------------
+# Keep ONLY the raw seed CSV; ignore everything generated at runtime
+data/market_snapshot.json
+data/market_snapshot_history.json
+data/signal.json
+data/orders.json
+data/screenshots/
+*.png
+*.jpg
+logs/
+*.log
+coverage/
+reports/
+
+# ------------------------------------------------------------------
+# Jupyter
+# ------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------------
+# Node / Front-End (if ever used for D3 front-end)
+# ------------------------------------------------------------------
+node_modules/
+dist/
+build/
+.cache/
+
+# ------------------------------------------------------------------
+# Misc
+# ------------------------------------------------------------------
+*.md.download   # any downloaded doc copies
+.env

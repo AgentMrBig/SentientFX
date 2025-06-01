@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-05-31 12:00:00",
+  "symbol": "USDJPY",
+  "open": 155.32,
+  "high": 155.44,
+  "low": 155.29,
+  "close": 155.38,
+  "volume": 1472,
+  "ma10": 155.35,
+  "bb_upper": 155.45,
+  "bb_lower": 155.31,
+  "volatility": 0.78,
+  "near_sr": true
+}

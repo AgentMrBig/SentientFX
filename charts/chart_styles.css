@@ -1,0 +1,162 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0e0e0e;
+  color: #ccc;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+#chart {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.axis path, .axis line {
+  stroke: #444;
+}
+
+.candle {
+  stroke-width: 1;
+}
+
+.candle.up {
+  fill: #0f0;
+  stroke: #0f0;
+}
+
+.candle.down {
+  fill: #f00;
+  stroke: #f00;
+}
+
+.ma-line {
+  stroke: #f90;
+  stroke-width: 2;
+  fill: none;
+}
+
+.bb-upper, .bb-lower {
+  stroke: #66f;
+  stroke-dasharray: 4;
+  fill: none;
+}
+
+.crosshair-line {
+  stroke: #777;
+  stroke-width: 1;
+  stroke-dasharray: 2 2;
+  pointer-events: none;
+}
+
+.tooltip-box {
+  fill: #222;
+  stroke: #888;
+  stroke-width: 0.5;
+  rx: 4;
+  height: 20px;
+}
+
+.tooltip-text {
+  font-size: 13px;
+  fill: #eee;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.current-price-box {
+  fill: #21c55d;
+  stroke: #21c55d;
+  rx: 4;
+}
+
+.current-price-text {
+  font-size: 11px;
+  fill: white;
+  text-anchor: middle;
+}
+
+#top-bar {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 0;
+  height: 45px;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 14px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+#symbol-time-container select {
+  margin-right: 10px;
+  padding: 5px 8px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#symbol-time-container select:focus {
+  outline: none;
+  border-color: #888;
+}
+
+#left-toolbar {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 60px;
+  background-color: #111;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  gap: 8px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.tool-button {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tool-button:hover {
+  background-color: #333;
+}
+
+#indicator-widget {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  font-size: 12px;
+  color: #ccc;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 10px;
+  max-width: 300px;
+  border-radius: 5px;
+  z-index: 10;
+}

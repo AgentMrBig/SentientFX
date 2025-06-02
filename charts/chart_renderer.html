@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SentientFX Chart</title>
+  <link rel="stylesheet" href="chart_styles.css" />
+</head>
+
+<body>
+  <div id="top-bar">
+    <div id="symbol-time-container">
+      <select id="symbol-select">
+        <option>USDJPY</option>
+        <option>EURUSD</option>
+      </select>
+      <select id="timeframe-selector">
+        <option value="1">1s</option>
+
+        <option value="60">1m</option>
+        <option value="300">5m</option>
+        <option value="900">15m</option>
+        <!-- etc -->
+      </select>
+
+    </div>
+    <span id="symbol-select" class="dropdown">USDJPY</span>
+    <span>·</span>
+    <span id="timeframe-select" class="dropdown">1m</span>
+    <span></span>
+
+  </div>
+  <div id="left-toolbar">
+    <div class="tool-button" title="Draw Trendline">✏️</div>
+    <div class="tool-button" title="Reset Zoom">🔄</div>
+    <div class="tool-button" title="Add Label">A</div>
+  </div>
+  <div id="chart"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="chart_renderer.js"></script>
+</body>
+
+</html>

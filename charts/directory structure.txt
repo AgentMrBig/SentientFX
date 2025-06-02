@@ -1,0 +1,31 @@
+/SentientFX/
+├── /bridge/
+├──── BRIDGE_README.md
+├──── config.py
+├──── log_utils.py
+├──── market_data_analyzer.py
+├──── order_router.py
+├──── sentientfx_bridge.py
+├──── signal_generator.py
+├──── simulate_market_stream.py
+├──── trade_executor.py
+├──── vision_prompt.py
+├── /charts/
+├──── chart_capture.py
+├──── chart_renderer.html
+├──── chart_renderer.js
+├──── chart_server.py
+├──── chart_styles.css
+├── /data/
+├── /docs/
+├── /ea/
+├── /logs/
+├── .env
+├── README.md
+├── requirements.txt
+├── start_sentientfx.bat
+├── Vision_Concept_and_Costs_2024-11.md
+├── README.md
+
+
+SentientFX
